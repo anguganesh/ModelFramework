@@ -1,5 +1,7 @@
 package generating.extent.reports;
 
+import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -8,6 +10,8 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
+import utilities.functions.Utilities;
 
 public class ReportsGeneration implements ITestListener {
 
@@ -29,7 +33,7 @@ public class ReportsGeneration implements ITestListener {
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		System.out.println(result.getName() + " Execution is started");
-		this.test = this.extent.createTest(result.getName());
+		this.test = this.extent.createTest(result.getName());		
 	}
 
 	public void onTestSuccess(ITestResult result) {
@@ -40,9 +44,17 @@ public class ReportsGeneration implements ITestListener {
 
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
+		String screenshotpath;
 		System.out.println(result.getName() + " is Failed");
 		this.test.fail(MarkupHelper.createLabel(result.getName() + " is Failed", ExtentColor.RED));
-		this.test.fail(result.getThrowable());		
+		this.test.fail(result.getThrowable());
+		try {
+			screenshotpath = Utilities.screenshot(result.getName());
+			this.test.addScreenCaptureFromPath(screenshotpath);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
 	}
 
 	public void onTestSkipped(ITestResult result) {
