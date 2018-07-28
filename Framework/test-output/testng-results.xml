@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="5181" started-at="2018-07-28T08:30:35Z" finished-at="2018-07-28T08:30:40Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="5181" started-at="2018-07-28T08:30:35Z" finished-at="2018-07-28T08:30:40Z">
+      <class name="test.scripts.TestScript1">
+        <test-method status="PASS" signature="LaunchBrowser(java.lang.String, java.lang.String)[pri:0, instance:test.scripts.TestScript1@e720b71]" name="LaunchBrowser" is-config="true" duration-ms="5115" started-at="2018-07-28T08:30:35Z" finished-at="2018-07-28T08:30:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[remote]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method status="PASS" signature="function()[pri:0, instance:test.scripts.TestScript1@e720b71]" name="function" duration-ms="41" started-at="2018-07-28T08:30:40Z" finished-at="2018-07-28T08:30:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- function -->
+      </class> <!-- test.scripts.TestScript1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
