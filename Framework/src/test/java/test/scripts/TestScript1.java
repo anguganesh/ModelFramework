@@ -2,11 +2,11 @@ package test.scripts;
 
 import java.io.IOException;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import utilities.functions.BrowserFactory;
 import utilities.functions.Utilities;
 
@@ -23,6 +23,13 @@ public class TestScript1 {
 		String url = this.driver.getCurrentUrl();
 		System.out.println("URL is " + url);
 	}
+	
+	@Test
+	public void function2()
+	{
+		Assert.assertEquals(true, false);		
+	}
+	
 	
 	@BeforeClass
 	@Parameters({"browser","runmode"})
