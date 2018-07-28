@@ -3,9 +3,10 @@
 <suite name="Suite">
 	<listeners>
 		<listener class-name="retry.analyzer.Transformer" />
+		<listener class-name="generating.extent.reports.ReportsGeneration" />
 	</listeners>
 
-	<parameter name="browser" value="firefox" />
+	<parameter name="browser" value="chrome" />
 	<parameter name="runmode" value="local" />
 	<test thread-count="5" name="Test">
 		<classes>

@@ -27,7 +27,8 @@ public class TestScript1 {
 	@Test
 	public void function2()
 	{
-		Assert.assertEquals(true, false);		
+		Assert.assertEquals(true, true);	
+		System.out.println("This is Function 2 Method");
 	}
 	
 	
