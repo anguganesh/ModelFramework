@@ -2,16 +2,16 @@
 <testng-results skipped="3" failed="1" ignored="0" total="5" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="8635" started-at="2018-07-28T21:17:28Z" finished-at="2018-07-28T21:17:37Z">
+  <suite name="Suite" duration-ms="5930" started-at="2018-07-28T21:34:37Z" finished-at="2018-07-28T21:34:43Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="8635" started-at="2018-07-28T21:17:28Z" finished-at="2018-07-28T21:17:37Z">
+    <test name="Test" duration-ms="5930" started-at="2018-07-28T21:34:37Z" finished-at="2018-07-28T21:34:43Z">
       <class name="test.scripts.TestScript1">
-        <test-method status="PASS" signature="LaunchBrowser(java.lang.String, java.lang.String)[pri:0, instance:test.scripts.TestScript1@8646db9]" name="LaunchBrowser" is-config="true" duration-ms="8260" started-at="2018-07-28T21:17:29Z" finished-at="2018-07-28T21:17:37Z">
+        <test-method status="PASS" signature="LaunchBrowser(java.lang.String, java.lang.String)[pri:0, instance:test.scripts.TestScript1@8646db9]" name="LaunchBrowser" is-config="true" duration-ms="5312" started-at="2018-07-28T21:34:37Z" finished-at="2018-07-28T21:34:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="1">
@@ -23,11 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method status="PASS" signature="function()[pri:0, instance:test.scripts.TestScript1@8646db9]" name="function" duration-ms="31" started-at="2018-07-28T21:17:37Z" finished-at="2018-07-28T21:17:37Z">
+        <test-method status="PASS" signature="function()[pri:0, instance:test.scripts.TestScript1@8646db9]" name="function" duration-ms="29" started-at="2018-07-28T21:34:42Z" finished-at="2018-07-28T21:34:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- function -->
-        <test-method status="SKIP" signature="function2()[pri:0, instance:test.scripts.TestScript1@8646db9]" name="function2" duration-ms="16" started-at="2018-07-28T21:17:37Z" finished-at="2018-07-28T21:17:37Z">
+        <test-method status="SKIP" signature="function2()[pri:0, instance:test.scripts.TestScript1@8646db9]" name="function2" duration-ms="3" started-at="2018-07-28T21:34:42Z" finished-at="2018-07-28T21:34:42Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -72,7 +72,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- function2 -->
-        <test-method status="FAIL" signature="function2()[pri:0, instance:test.scripts.TestScript1@8646db9]" name="function2" duration-ms="16" started-at="2018-07-28T21:17:37Z" finished-at="2018-07-28T21:17:37Z">
+        <test-method status="SKIP" signature="function2()[pri:0, instance:test.scripts.TestScript1@8646db9]" name="function2" duration-ms="1" started-at="2018-07-28T21:34:42Z" finished-at="2018-07-28T21:34:42Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -117,7 +117,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- function2 -->
-        <test-method status="SKIP" signature="function2()[pri:0, instance:test.scripts.TestScript1@8646db9]" name="function2" duration-ms="0" started-at="2018-07-28T21:17:37Z" finished-at="2018-07-28T21:17:37Z">
+        <test-method status="SKIP" signature="function2()[pri:0, instance:test.scripts.TestScript1@8646db9]" name="function2" duration-ms="1" started-at="2018-07-28T21:34:42Z" finished-at="2018-07-28T21:34:42Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -162,7 +162,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- function2 -->
-        <test-method status="SKIP" signature="function2()[pri:0, instance:test.scripts.TestScript1@8646db9]" name="function2" duration-ms="0" started-at="2018-07-28T21:17:37Z" finished-at="2018-07-28T21:17:37Z">
+        <test-method status="FAIL" signature="function2()[pri:0, instance:test.scripts.TestScript1@8646db9]" name="function2" duration-ms="1" started-at="2018-07-28T21:34:42Z" finished-at="2018-07-28T21:34:42Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>

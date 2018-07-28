@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <parameter name="runmode" value="local"/>
-  <parameter name="browser" value="firefox"/>
+  <parameter name="browser" value="chrome"/>
   <listeners>
     <listener class-name="retry.analyzer.Transformer"/>
     <listener class-name="generating.extent.reports.ReportsGeneration"/>

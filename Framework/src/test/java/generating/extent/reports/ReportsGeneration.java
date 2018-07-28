@@ -50,7 +50,7 @@ public class ReportsGeneration implements ITestListener {
 		this.test.fail(result.getThrowable());
 		try {
 			screenshotpath = Utilities.screenshot(result.getName());
-			this.test.addScreenCaptureFromPath(screenshotpath);
+			this.test.addScreenCaptureFromPath(screenshotpath);			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
